@@ -98,7 +98,7 @@
         <div class="card">
         <h2>Luas Segitiga</h2>
 
-        <div class="card-body>
+        <div class="card-body">
         <form method="get">
           <label>Alas :
           <input type="number" id="Nalas">
@@ -107,7 +107,7 @@
           <input type="number" id="Ntinggi">
         </label>
           <button type="button" onclick="hitungluas_segitiga()" class="btn_hitung">Hitung!</button>
-        </form><br><br>
+        </form><br>
       </div>
 
         <div class="card-footer">
@@ -116,9 +116,9 @@
       
         </div>
       </div>
+    </div>
 
-
-      </div>
+      
 </div>
 </body>
 </html>
@@ -142,7 +142,8 @@
     function hitungluas_segitiga(){
       let alas = Number(document.getElementById("Nalas").value)
       let tinggi = Number(document.getElementById("Ntinggi").value)
-      let lsegitiga = (alas*tinggi)/2;
+      let lsegitiga = "<br>Alas = "+alas+"cm<br>Tinggi = "+tinggi+"cm<br>"
+          lsegitiga += "Hasil Hitung = "+ (alas*tinggi)/2; +"cm<br>"
       document.getElementById("Nluas_segitiga").innerHTML = lsegitiga
            
     }
